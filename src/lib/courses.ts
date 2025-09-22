@@ -117,7 +117,7 @@ function extractCourseCodeFromName(name: string): string {
 
 export async function getCourses(): Promise<{ courses: Course[], semesters: number[], idMapping: CourseIdMapping }> {
   try {
-    const response = await fetch('https://ccomp-uerj-progress-backend.onrender.com/disciplines');
+    const response = await fetch('https://ccompuerj-progress-backend.onrender.com/disciplines');
     if (!response.ok) {
       throw new Error('Falha ao buscar os cursos');
     }

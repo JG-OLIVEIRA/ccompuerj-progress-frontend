@@ -11,7 +11,7 @@ export async function GET(
   }
 
   try {
-    const apiResponse = await fetch(`https://ccomp-uerj-progress-backend.onrender.com/disciplines/${id}`);
+    const apiResponse = await fetch(`https://ccompuerj-progress-backend.onrender.com/disciplines/${id}`);
 
     if (!apiResponse.ok) {
       const errorText = await apiResponse.text();

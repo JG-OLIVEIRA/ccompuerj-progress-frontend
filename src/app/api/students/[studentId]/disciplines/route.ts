@@ -1,7 +1,7 @@
 
 import { NextResponse } from 'next/server';
 
-const EXTERNAL_API_BASE_URL = 'https://ccomp-uerj-progress-backend.onrender.com';
+const EXTERNAL_API_BASE_URL = 'https://ccompuerj-progress-backend.onrender.com';
 
 // This route is a proxy to get all disciplines (completed, current, etc.) for a student
 export async function GET(

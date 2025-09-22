@@ -12,7 +12,7 @@ export type Teacher = {
 
 async function fetchAllTeachers(): Promise<Teacher[]> {
   try {
-    const res = await fetch('https://ccomp-uerj-progress-backend.onrender.com/teachers', {
+    const res = await fetch('https://ccompuerj-progress-backend.onrender.com/teachers', {
       next: { revalidate: 3600 } // Revalidate every hour
     });
     if (!res.ok) {
